@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fupload</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div id="drop-area">
+  <form class="my-form">
+    <p>
+      Upload multiple files with the file dialog
+      or by dragging and dropping images onto the
+      dashed region
+    </p>
+    <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+    <label class="button" for="fileElem">Select some files</label>
+  </form>
+  </div>
+</body>
+</html>
